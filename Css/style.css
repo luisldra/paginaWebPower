@@ -290,17 +290,127 @@ iframe {
                                                     Aca empieza Sobre Nosotros
  ----------------------------------------------------------------------------------------------------------------- */
 
+ .tituloSobreNosotros{
+    margin: 2% 5%;
+    font-size: 50px;
+    font-weight: bold;
 
+ }
 
+ .sobreNosotros{
+    box-sizing: border-box;
+    margin: 2% 5%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
 
+.informacionSobreNosotros h2, .informacionEntrenadores h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+}
 
+.informacionSobreNosotros p{
+    font-size: 20px;
+    margin: 5px 20px;
 
+}
 
+.entrenadores li{
+    width: 20%;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0px 2.5% 30px;
+    display: grid;
+    justify-items: center;
+    float: left;
+}
 
+.entrenadores h3{
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
 
+.entrenadores p{
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
 
-
+.entrenadores li img{
+    width: 90%;
+}
 
 /* -----------------------------------------------------------------------------------------------------------------
                                                     Aca empieza Informacion
  ----------------------------------------------------------------------------------------------------------------- */
+main{
+    width: 90%;
+    height: 720px;
+}
+
+ .tituloInformacion{
+    margin: 2% 29%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ .informacion{
+    display: grid;
+    margin: 2% 30%;
+    padding: 0 40px;
+ }
+
+ .informacion label, .informacion fieldset legend p{
+    font-size: 20px;
+    margin: 20px 0 0;
+ }
+
+ .informacion input{
+    width: 60%;
+    padding: 5px;
+    margin-top: 5px;
+ }
+
+ .informacion select{
+    width: 40%;
+    padding: 3px;
+ }
+
+ .informacion textarea{
+    width: 80%;
+    resize: none;
+ }
+
+ .informacion fieldset input{
+    width: auto;
+    margin: 0 0 0 20px;
+ }
+
+ #enviar{
+    width: 15%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 80px;
+    left: 1000px;
+}
+
+#enviar:hover{
+    transform: scale(1.1);
+}
+
