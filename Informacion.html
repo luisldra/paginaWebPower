@@ -13,21 +13,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
 
+    <script src="programa.js"></script>
+
 </head>
 
 <body>
 
     <header>
         <div class="navbar">
-            <h1> <img src="Imagenes/iconos/basketball.png" alt="Icono Balon"> </h1>
+            <a href="Home.html" class="aNavegacion"><h1> <img src="Imagenes/iconos/basketball.png" alt="Icono Balon"> </h1></a>
 
             <p class="liParrafo"> POWER BASKETBALL CLUB </p>
 
-            <button><img src="Imagenes/iconos/menu.png" alt="Icono Menu"></button>
+            <button id="btnNavegacion"><img src="Imagenes/iconos/menu.png" alt="Icono Menu"></button>
+        </div>
+        <div class="navegacion" id="navegacion">
+            <ul class="paginas">
+                <li><a href="Home.html">Inicio</a> </li>
+                <li><a href="Noticias.html">Noticias</a> </li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="Categorias.html">Categoria Equipos</a></li>
+                <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+            </ul>
         </div>
     </header>
 
-    <main>
+    <main class="mainInformacion">
         <h1 class="tituloInformacion">¿Necesitas mas información?. Comunícate con nosotros</h1>
         <form class="informacion">
             <label for="nombreApellido">Nombre y Apellido</label>

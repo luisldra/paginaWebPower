@@ -49,6 +49,54 @@
     margin: 0 auto;
 }
 
+/* -----------------------------------------------------------------------------------------------------------------
+                                                Implementacion Navegacion
+ ----------------------------------------------------------------------------------------------------------------- */
+.aNavegacion{
+    display: contents;
+}
+
+#btnNavegacion{
+    cursor: pointer;
+}
+
+.navegacion{
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    right: 95px;
+    top: 150px;
+    display: none;
+
+    background-color: aliceblue;
+}
+
+.paginas{
+    display: flex;
+    margin: 35px 15px;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end
+}
+
+.paginas li{
+    font-size: 30px;
+    padding: 10px 20px;
+}
+
+.paginas a{
+    text-decoration: none;
+}
+
+.paginas a:visited{
+    color: black;
+}
+
+ /* -----------------------------------------------------------------------------------------------------------------
+                                                Aca termina Navegacion
+ ----------------------------------------------------------------------------------------------------------------- */
+
 body {
     background-image: url(../Imagenes/FondoBalones.jpg);
     width: 100%;
@@ -350,7 +398,7 @@ iframe {
 /* -----------------------------------------------------------------------------------------------------------------
                                                     Aca empieza Informacion
  ----------------------------------------------------------------------------------------------------------------- */
-main{
+.mainInformacion{
     width: 90%;
     height: 720px;
 }
