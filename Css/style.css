@@ -1,0 +1,191 @@
+
+.body{
+    width: 1920px;
+    height: 1080px;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin: 50px auto 0 ;
+}
+
+.navbar h1{
+    width: 10%;
+    height: 80px;
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+.navbar p{
+    width: 80%;
+    height: 100%;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+    FONT-SIZE: xx-large;
+}
+
+.navbar button{
+    width: 10%;
+    float: left;
+    border: none;
+    background: none;
+}
+
+.navbar button img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-image: url(../Imagenes/FondoBalones.jpg);
+}
+
+/* 
+.contenedorG {
+    background-color: white;
+    margin: 2% 5% 2% 5%;
+
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    list-style: none; /* Quitamos los puntos de la lista /
+    padding: 0;
+    background-color: #0049eb;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+li {
+    width: auto;
+    height: 60px; /* Definimos la altura del li /
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    float: left;
+    padding: 0px 20px;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liParrafo{
+    font-family: 'Delicious Handrawn', cursive;
+    FONT-SIZE: xx-large;
+    text-align: center;
+}
+
+ul li img {
+    height: 60%; /* Establecemos la altura de la imagen al 100% /
+    object-fit: contain; /* Hacemos que la imagen se ajuste al tamaño del contenedor /
+}
+
+.imgBotonNavbar{
+    width: 100%;
+}
+
+.home{
+    overflow: auto;
+}
+
+.imgBanner{
+    width: 96%;
+    height: 10%;
+    float: left;
+    margin: 0 2% 0;
+}
+
+.contenedorTablas{
+    margin: 0 2% 0 2%;
+    float: left;
+}
+
+th{
+    text-align: left;
+}
+
+td{
+    border: 1px solid;
+    padding: 2%;
+}
+
+td p{
+    float: left;
+    width: 68%;
+    margin: 0 2% 0 0;
+    text-align: left;
+}
+
+.tableColum1{
+    padding:  0 10px;
+    border: 1px solid;
+    width: 62%;
+    float: left;
+    margin: 1% 2% 2% 2%;
+}
+
+.tableColum2{
+    padding: 0 10px;
+    border: 1px solid;
+    width: 30%;
+    float: left;
+    margin: 1% 2% 2% 2%;
+}
+
+.imgLista{
+    width: 30%;
+    float: right;
+}
+
+table{
+    border-spacing: 0 20px;
+}
+
+.botonNavbar{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+ */
