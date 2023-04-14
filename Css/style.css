@@ -45,33 +45,103 @@
     margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
     background-image: url(../Imagenes/FondoBalones.jpg);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+main{
+    width: 90%;
+    height: auto;
+    background-color: aqua;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.bannerHome{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+}
+
+.imgBanner{
+    width: 90%;
+    margin-top: 10px;
+}
+
+.informacionGeneral{
+    width: 55%;
+    margin: 20px 2.5% 20px 5%;
+    box-sizing: border-box;
+}
+
+.informacionGeneral, .eventos{
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+
+    border: 2px solid;
+}
+
+.informacionGeneral h2, .eventos h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.eventos{
+    width: 30%;
+    height: auto;
+    margin: 20px 5% 20px 2.5%;
+}
+
+.postInformacion li, .postEventos li{
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.postInformacion li p, .postEventos li div{
+    width: 78%;
+    float: left;
+
+    font-size: 20px;
+}
+
+.postInformacion li img{
+    width: 20%;
+    float: left;
+    margin: 0 1% 0 1%;
+}
+
+.postEventos li img{
+    width: 20%;
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+.tituloEvento{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.descripcionEvento{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+
+
+
 
 /* 
 .contenedorG {
