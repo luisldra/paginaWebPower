@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
 
-    <script src="programa.js"></script>
+    <script src="JavaScript/programa.js"></script>
 
 </head>
 
@@ -21,12 +21,13 @@
 
     <header>
         <div class="navbar">
-            <a href="index.html" class="aNavegacion"><h1> <img src="Imagenes/iconos/basketball.png" alt="Icono Balon"> </h1></a>
-
+            <a href="index.html" class="aNavegacion"><img src="Imagenes/iconos/Logo Power.PNG" alt="Icono Balon"></a>
             <p class="liParrafo"> POWER BASKETBALL CLUB </p>
-
-            <button id="btnNavegacion"><img src="Imagenes/iconos/menu.png" alt="Icono Menu"></button>
+            <div class="contenedorBotonNav">
+                <button id="btnNavegacion"><img src="Imagenes/iconos/menu.png" alt="Icono Menu"></button>
+            </div>
         </div>
+
         <div class="navegacion" id="navegacion">
             <ul class="paginas">
                 <li><a href="index.html">Inicio</a> </li>
@@ -41,13 +42,28 @@
     <main>
         <section class="galeria">
             <h1>Galeria</h1>
-            <div class="elementoGaleria">
-                <img src="Imagenes\ImgInstaPower\324078815_561993665513593_7025106558794321492_n.jpg" alt="">
-                <img src="Imagenes/ImgInstaPower/320045769_1479649399224083_4132460062630429398_n.jpg" alt="">
-                <img src="Imagenes/ImgInstaPower/329123256_6542429472437264_5525060318983768341_n.jpg" alt="">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UztrYATqGI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <img src="Imagenes/ImgInstaPower/333095924_3397719793829169_1365203021663684019_n.jpg" alt="">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/trjdIcrmOPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="carousel">
+
+                <div class="anteriorImg">
+                    <button id="retroceder"><img src="Imagenes/iconos/left-arrow.png"></button>
+                </div>
+                <div class="imagen" id="imagen"></div>
+                <div class="siguienteImg">
+                    <button id="avanzar"><img src="Imagenes/iconos/keyboard-right-arrow-button.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="carousel-videos">
+
+                <div class="anteriorImg">
+                    <button id="retrocederVideo"><img src="Imagenes/iconos/left-arrow.png"></button>
+                </div>
+                <div class="video" id="video">
+                    <iframe id="videoIframe" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="siguienteImg">
+                    <button id="avanzarVideo"><img src="Imagenes/iconos/keyboard-right-arrow-button.png" alt=""></button>
+                </div>
             </div>
         </section>
     </main>

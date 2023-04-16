@@ -15,35 +15,47 @@
     width: 90%;
     height: 100px;
     margin: 50px auto 0;
+    border-radius: 20px 20px 0 0;
 }
 
-.navbar h1 {
-    width: 10%;
+.navbar a {
+    width: 20%;
     height: 80px;
     display: flex;
     float: left;
-    justify-content: center;
+}
+
+.navbar a img{
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 0 0 10%;
 }
 
 .navbar p {
-    width: 80%;
+    width: 60%;
     height: 100%;
     float: left;
     line-height: 100px;
     text-align: center;
     font-family: 'Delicious Handrawn', cursive;
-    FONT-SIZE: xx-large;
+    FONT-SIZE: 50px;
 }
 
-.navbar button {
-    width: 10%;
-    float: left;
+.contenedorBotonNav{
+    width: 20%;
+}
+
+.contenedorBotonNav button {
+    width: 20%;
+    float: right;
     border: none;
     background: none;
+    box-sizing: border-box;
+    margin: 0 10%;
 }
 
 .navbar button img {
-    width: 60px;
+    width: 100%;
     height: 60px;
     display: flex;
     margin: 0 auto;
@@ -52,9 +64,6 @@
 /* -----------------------------------------------------------------------------------------------------------------
                                                 Implementacion Navegacion
  ----------------------------------------------------------------------------------------------------------------- */
-.aNavegacion{
-    display: contents;
-}
 
 #btnNavegacion{
     cursor: pointer;
@@ -62,18 +71,20 @@
 
 .navegacion{
     width: 300px;
-    height: 320px;
+    height: auto;
     position: absolute;
-    right: 95px;
+    right: 5%;
     top: 150px;
     display: none;
+    box-shadow: 0px 6px 11px 1px  #a1bb12;
 
-    background-color: aliceblue;
+    background-color: white;
 }
 
 .paginas{
+    box-sizing: border-box;
     display: flex;
-    margin: 35px 15px;
+    margin: 10px;
     list-style: none;
     flex-direction: column;
     justify-content: center;
@@ -81,12 +92,32 @@
 }
 
 .paginas li{
+    display: flex;
     font-size: 30px;
-    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .paginas a{
     text-decoration: none;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    transition: 1s all;
+}
+
+.paginas a:hover{
+    transform: scale(1,1.2);
+    background-color: #a1bb12;
+}
+
+.paginas a:active{
+    background-color: #a1bb12;
 }
 
 .paginas a:visited{
@@ -108,9 +139,11 @@ body {
 main {
     width: 90%;
     height: auto;
-    background-color: aqua;
+    background-color:   #2a83dd  ;
     display: inline-block;
     margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 50px;
 }
 
 .bannerHome {
@@ -138,7 +171,7 @@ main {
     padding: 20px;
     float: left;
 
-    border: 2px solid;
+    border: 0px solid;
 }
 
 .informacionGeneral h2,
@@ -164,6 +197,10 @@ main {
     align-items: center;
 }
 
+.postInformacion li img + p, .postInformacion li p + img{
+    margin: 0 0 0 20px;
+}
+
 .postInformacion li p,
 .postEventos li div {
     width: 78%;
@@ -175,13 +212,12 @@ main {
 .postInformacion li img {
     width: 20%;
     float: left;
-    margin: 0 1% 0 1%;
 }
 
 .postEventos li img {
     width: 20%;
     float: left;
-    margin: 0 2% 0 0;
+    margin: 0 20px 0 0;
 }
 
 .tituloEvento {
@@ -209,6 +245,10 @@ main {
     font-weight: bold;
 }
 
+.postNoticias li img + div, .postNoticias li div + img, .postNoticias li img + img{
+    margin: 0 0 0 20px;
+}
+
 .postNoticias li {
     border: 1px solid;
     border-radius: 10px;
@@ -231,7 +271,6 @@ main {
 
 .postNoticias li img {
     width: 20%;
-    margin: 0 1%;
 }
 
 
@@ -239,30 +278,71 @@ main {
                                                     Aca empieza Galeria
  ----------------------------------------------------------------------------------------------------------------- */
 
-.galeria {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 2% 5%;
-    float: left;
-}
 
 .galeria h1 {
     font-size: 50px;
     font-weight: bold;
 }
 
-.elementoGaleria {
-    width: 100%;
+/*
+        Carrusel de Fotos
+*/
+
+.galeria{
+    width: 90%;
+    box-sizing: border-box;
+    margin: 2% 5%;
     float: left;
-    margin-top: 20px;
 }
 
-.elementoGaleria img,
-iframe {
-    width: 30%;
-    height: 500px;
-    box-sizing: border-box;
-    padding: 10px;
+.carousel {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.carousel button, .carousel-videos button{
+    background: none;
+    border: none;
+}
+
+.carousel button img, .carousel-videos button img{
+    width: 80%;
+}
+
+.anteriorImg{
+    width: 10%;
+}
+
+#imagen {
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+}
+
+#video{
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siguienteImg{
+    width: 10%;
+}
+
+.carousel-videos {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.galeria button{
+    cursor: pointer;
 }
 
 
@@ -461,4 +541,3 @@ iframe {
 #enviar:hover{
     transform: scale(1.1);
 }
-
