@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
 
     <script src="JavaScript/programa.js"></script>
+    <script src="JavaScript/carrusel.js"></script>
 
 </head>
 
@@ -22,7 +23,7 @@
     <header>
         <div class="navbar">
             <a href="index.html" class="aNavegacion"><img src="Imagenes/iconos/Logo Power.PNG" alt="Icono Balon"></a>
-            <p class="liParrafo"> POWER BASKETBALL CLUB </p>
+            <h1 class="liParrafo"> POWER BASKETBALL CLUB </h1>
             <div class="contenedorBotonNav">
                 <button id="btnNavegacion"><img src="Imagenes/iconos/menu.png" alt="Icono Menu"></button>
             </div>
@@ -42,15 +43,25 @@
     <main>
         <section class="galeria">
             <h1>Galeria</h1>
-            <div class="carousel">
 
+            <div class="tituloImagenes">
+                <h2>Imagenes</h2>
+            </div>
+            <div class="carousel">
                 <div class="anteriorImg">
                     <button id="retroceder"><img src="Imagenes/iconos/left-arrow.png"></button>
                 </div>
-                <div class="imagen" id="imagen"></div>
+                <div class="imagenCarousel">
+                    <img id="imagenIMG" src="" alt="">
+                </div>
+                <!-- <div class="imagen" id="imagen"></div> -->
                 <div class="siguienteImg">
                     <button id="avanzar"><img src="Imagenes/iconos/keyboard-right-arrow-button.png" alt=""></button>
                 </div>
+            </div>
+
+            <div class="tituloVideos">
+                <h2>Videos</h2>
             </div>
 
             <div class="carousel-videos">
@@ -59,10 +70,14 @@
                     <button id="retrocederVideo"><img src="Imagenes/iconos/left-arrow.png"></button>
                 </div>
                 <div class="video" id="video">
-                    <iframe id="videoIframe" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe id="videoIframe" width="560" height="315" src="" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="siguienteImg">
-                    <button id="avanzarVideo"><img src="Imagenes/iconos/keyboard-right-arrow-button.png" alt=""></button>
+                    <button id="avanzarVideo"><img src="Imagenes/iconos/keyboard-right-arrow-button.png"
+                            alt=""></button>
                 </div>
             </div>
         </section>

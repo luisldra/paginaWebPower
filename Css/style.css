@@ -7,6 +7,25 @@
     height: 1080px;
 }
 
+h1,
+h2,
+h3, a {
+    color: #2a83dd;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+p, label {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+li{
+    border:1px solid white;
+}
+
 .navbar {
     background-color: white;
     display: flex;
@@ -25,23 +44,28 @@
     float: left;
 }
 
-.navbar a img{
+.navbar a img {
     width: 80%;
     box-sizing: border-box;
     margin: 0 0 0 10%;
 }
 
-.navbar p {
+.navbar h1 {
     width: 60%;
     height: 100%;
     float: left;
     line-height: 100px;
     text-align: center;
-    font-family: 'Delicious Handrawn', cursive;
-    FONT-SIZE: 50px;
+    /* font-family: 'Delicious Handrawn', cursive;
+    FONT-SIZE: 50px; */
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.contenedorBotonNav{
+.contenedorBotonNav {
     width: 20%;
 }
 
@@ -65,23 +89,23 @@
                                                 Implementacion Navegacion
  ----------------------------------------------------------------------------------------------------------------- */
 
-#btnNavegacion{
+#btnNavegacion {
     cursor: pointer;
 }
 
-.navegacion{
+.navegacion {
     width: 300px;
     height: auto;
     position: absolute;
     right: 5%;
     top: 150px;
     display: none;
-    box-shadow: 0px 6px 11px 1px  #a1bb12;
+    box-shadow: 0px 11px 11px 1px #a1bb12;
 
     background-color: white;
 }
 
-.paginas{
+.paginas {
     box-sizing: border-box;
     display: flex;
     margin: 10px;
@@ -91,7 +115,7 @@
     align-items: flex-end
 }
 
-.paginas li{
+.paginas li {
     display: flex;
     font-size: 30px;
     width: 100%;
@@ -100,7 +124,7 @@
     justify-content: space-around;
 }
 
-.paginas a{
+.paginas a {
     text-decoration: none;
     width: 100%;
     height: 80%;
@@ -111,20 +135,20 @@
     transition: 1s all;
 }
 
-.paginas a:hover{
-    transform: scale(1,1.2);
+.paginas a:hover {
+    transform: scale(1, 1.2);
     background-color: #a1bb12;
 }
 
-.paginas a:active{
-    background-color: #a1bb12;
+.paginas a:active {
+    background-color: #2a83dd;
 }
 
-.paginas a:visited{
-    color: black;
+.paginas a:visited {
+    color: #2a83dd;
 }
 
- /* -----------------------------------------------------------------------------------------------------------------
+/* -----------------------------------------------------------------------------------------------------------------
                                                 Aca termina Navegacion
  ----------------------------------------------------------------------------------------------------------------- */
 
@@ -139,7 +163,7 @@ body {
 main {
     width: 90%;
     height: auto;
-    background-color:   #2a83dd  ;
+    background-color: black;
     display: inline-block;
     margin: 0 auto;
     border-radius: 0 0 20px 20px;
@@ -168,10 +192,7 @@ main {
 .informacionGeneral,
 .eventos {
     box-sizing: border-box;
-    padding: 20px;
     float: left;
-
-    border: 0px solid;
 }
 
 .informacionGeneral h2,
@@ -188,7 +209,6 @@ main {
 
 .postInformacion li,
 .postEventos li {
-    border: 1px solid;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px;
@@ -197,7 +217,8 @@ main {
     align-items: center;
 }
 
-.postInformacion li img + p, .postInformacion li p + img{
+.postInformacion li img+p,
+.postInformacion li p+img {
     margin: 0 0 0 20px;
 }
 
@@ -210,7 +231,7 @@ main {
 }
 
 .postInformacion li img {
-    width: 20%;
+    width: 30%;
     float: left;
 }
 
@@ -245,18 +266,23 @@ main {
     font-weight: bold;
 }
 
-.postNoticias li img + div, .postNoticias li div + img, .postNoticias li img + img{
-    margin: 0 0 0 20px;
+.postNoticias li div+div{
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .postNoticias li {
-    border: 1px solid;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px;
     margin-top: 20px;
     display: flex;
     align-items: center;
+}
+
+.textoNoticias{
+    margin-right: 20px;
 }
 
 .postNoticias li div h2 {
@@ -269,10 +295,9 @@ main {
     font-size: 20px;
 }
 
-.postNoticias li img {
-    width: 20%;
+.imagenNoticia img + img{
+    margin-left: 20px;
 }
-
 
 /* -----------------------------------------------------------------------------------------------------------------
                                                     Aca empieza Galeria
@@ -288,7 +313,18 @@ main {
         Carrusel de Fotos
 */
 
-.galeria{
+.tituloImagenes,
+.tituloVideos {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tituloVideos {
+    margin-top: 50px;
+}
+
+.galeria {
     width: 90%;
     box-sizing: border-box;
     margin: 2% 5%;
@@ -300,18 +336,22 @@ main {
     margin: 20px auto;
     display: flex;
     align-items: center;
+    box-shadow: 0px 0px 11px 6px #a1bb12;
+    border-radius: 20px
 }
 
-.carousel button, .carousel-videos button{
+.carousel button,
+.carousel-videos button {
     background: none;
     border: none;
 }
 
-.carousel button img, .carousel-videos button img{
+.carousel button img,
+.carousel-videos button img {
     width: 80%;
 }
 
-.anteriorImg{
+.anteriorImg {
     width: 10%;
 }
 
@@ -321,7 +361,13 @@ main {
     background-size: cover;
 }
 
-#video{
+#imagenIMG {
+    width: 560px;
+    height: 315px;
+}
+
+#video,
+.imagenCarousel {
     width: 80%;
     height: 400px;
     background-size: cover;
@@ -330,7 +376,7 @@ main {
     align-items: center;
 }
 
-.siguienteImg{
+.siguienteImg {
     width: 10%;
 }
 
@@ -339,9 +385,11 @@ main {
     margin: 20px auto;
     display: flex;
     align-items: center;
+    box-shadow: 0px 0px 11px 6px #a1bb12;
+    border-radius: 20px
 }
 
-.galeria button{
+.galeria button {
     cursor: pointer;
 }
 
@@ -366,7 +414,6 @@ main {
 
 .postCategorias li {
     width: 45%;
-    border: 1px solid;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px;
@@ -398,7 +445,7 @@ main {
     text-align: center;
 }
 
-.linkInformacion{
+.linkInformacion {
     display: flex;
     width: 100%;
     height: 100px;
@@ -418,36 +465,45 @@ main {
                                                     Aca empieza Sobre Nosotros
  ----------------------------------------------------------------------------------------------------------------- */
 
- .tituloSobreNosotros{
+.tituloSobreNosotros {
     margin: 2% 5%;
     font-size: 50px;
     font-weight: bold;
 
- }
+}
 
- .sobreNosotros{
+.sobreNosotros {
     box-sizing: border-box;
     margin: 2% 5%;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
 }
 
-.informacionSobreNosotros h2, .informacionEntrenadores h2{
+.informacionEntrenadores{
+    width: 100%;
+}
+
+.informacionSobreNosotros h2,
+.informacionEntrenadores h2 {
     font-size: 22px;
     font-weight: bold;
     margin: 20px;
 }
 
-.informacionSobreNosotros p{
+.informacionSobreNosotros p {
     font-size: 20px;
     margin: 5px 20px;
 
 }
 
-.entrenadores li{
-    width: 20%;
-    border: 1px solid;
+.entrenadores{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.entrenadores li {
+    width: 45%;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px;
@@ -457,7 +513,7 @@ main {
     float: left;
 }
 
-.entrenadores h3{
+.entrenadores h3 {
     width: 100%;
     font-size: 22px;
     font-weight: bold;
@@ -465,79 +521,118 @@ main {
     margin-top: 20px;
 }
 
-.entrenadores p{
+.entrenadores p {
     font-size: 18px;
     text-align: center;
     margin: 10px 0;
 }
 
-.entrenadores li img{
-    width: 90%;
+.entrenadores li img {
+    width: 400px;
 }
 
 /* -----------------------------------------------------------------------------------------------------------------
                                                     Aca empieza Informacion
  ----------------------------------------------------------------------------------------------------------------- */
-.mainInformacion{
+.mainInformacion {
     width: 90%;
-    height: 720px;
 }
 
- .tituloInformacion{
-    margin: 2% 29%;
+.tituloInformacion {
+    width: 700px;
+    margin: 2% auto;
     font-size: 30px;
     font-weight: bold;
 }
 
- .informacion{
+.informacion {
+    width: 700px;
     display: grid;
-    margin: 2% 30%;
+    margin: 2% auto;
     padding: 0 40px;
- }
+}
 
- .informacion label, .informacion fieldset legend p{
+.informacion label,
+.informacion fieldset legend p {
     font-size: 20px;
     margin: 20px 0 0;
- }
+}
 
- .informacion input{
+.informacion input {
     width: 60%;
     padding: 5px;
     margin-top: 5px;
- }
+}
 
- .informacion select{
+.informacion select {
+    margin-top: 10px;
     width: 40%;
     padding: 3px;
- }
+}
 
- .informacion textarea{
+.informacion textarea {
     width: 80%;
     resize: none;
- }
+}
 
- .informacion fieldset input{
+.informacion fieldset input {
     width: auto;
     margin: 0 0 0 20px;
- }
+}
 
- #enviar{
-    width: 15%;
+#enviar {
+    width: 200px;
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background-color: blue;
+    background-color: #2a83dd;
     border: none;
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
-    margin-top: 20px;
-    position: absolute;
-    bottom: 80px;
-    left: 1000px;
+    margin: 20px auto;
 }
 
-#enviar:hover{
+#enviar:hover {
     transform: scale(1.1);
+}
+
+.imagenNoticia{
+    display: contents;
+    float: left;
+}
+
+.imagenNoticia img{
+    width: 400px;
+}
+
+@media screen and (max-width:1700px){
+
+    .informacionGeneral, .eventos{
+        width: 90%;
+    }
+
+    .postNoticias li{
+        display: grid;
+    }
+
+    .imagenNoticia{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .textoNoticias{
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .imagenNoticia img{
+        width: 300px;
+    }
+
+    .entrenadores li img{
+        width: 300px;
+    }
 }
