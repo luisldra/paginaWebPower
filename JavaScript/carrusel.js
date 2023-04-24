@@ -3,12 +3,17 @@
 window.onload = function () {
     // Variables
     const IMAGENES = [
-        'Imagenes/ImgInstaPower/333414102_2562085533931338_2926266104848798452_n.jpg',
-        'Imagenes/ImgInstaPower/324078815_561993665513593_7025106558794321492_n.jpg',
-        'Imagenes/ImgInstaPower/333414102_2562085533931338_2926266104848798452_n.jpg',
-        'Imagenes/ImgInstaPower/329123256_6542429472437264_5525060318983768341_n.jpg',
-        'Imagenes/ImgInstaPower/333095924_3397719793829169_1365203021663684019_n.jpg'
+        "Imagenes/ImgInstaPower/319934676_542187067808155_5506817459036680837_n.jpg",
+        "Imagenes/ImgInstaPower/320220729_1206043266648287_1621202290998862137_n.jpg",
+        "Imagenes/ImgInstaPower/320276513_474138844857729_4148599765787087094_n.jpg",
+        "Imagenes/ImgInstaPower/324061092_695474215250908_5221725950839615066_n.jpg",
+        "Imagenes/ImgInstaPower/324223061_844117893335484_2717423714343401341_n.jpg",
+        "Imagenes/ImgInstaPower/324557060_195437269733201_6387825662544903036_n.jpg",
+        "Imagenes/ImgInstaPower/324912791_1027607081529640_7121042080040324101_n.jpg",
+        "Imagenes/ImgInstaPower/333095924_3397719793829169_1365203021663684019_n.jpg",
+        "Imagenes/ImgInstaPower/330241979_899960794478924_8453570458333450769_n.jpg"
     ];
+
 
     const VIDEOS = [
         'https://www.youtube.com/embed/XWA7NfxIRZo',

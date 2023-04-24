@@ -56,9 +56,6 @@ li{
     float: left;
     line-height: 100px;
     text-align: center;
-    /* font-family: 'Delicious Handrawn', cursive;
-    FONT-SIZE: 50px; */
-
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -293,6 +290,15 @@ main {
 
 .postNoticias li div p {
     font-size: 20px;
+}
+
+.imagenNoticia{
+    display: contents;
+    float: left;
+}
+
+.imagenNoticia img{
+    width: 300px;
 }
 
 .imagenNoticia img + img{
@@ -598,19 +604,23 @@ main {
     transform: scale(1.1);
 }
 
-.imagenNoticia{
-    display: contents;
-    float: left;
-}
 
-.imagenNoticia img{
-    width: 400px;
-}
+@media screen and (max-width:1200px){
 
-@media screen and (max-width:1700px){
+    .navbar h1{
+        font-size: 25px;
+    }
+
+    .contenedorBotonNav button{
+        width: 50%;
+    }
 
     .informacionGeneral, .eventos{
         width: 90%;
+    }
+
+    .eventos{
+        margin: 20px 2.5% 20px 5%;
     }
 
     .postNoticias li{
@@ -621,18 +631,26 @@ main {
         display: flex;
         justify-content: space-evenly;
     }
+    
+    .imagenNoticia img{
+        width: 50%;
+    }
 
     .textoNoticias{
         margin: 20px;
     }
 }
 
-@media screen and (max-width:1100px){
-    .imagenNoticia img{
-        width: 300px;
+@media screen and (max-width:1500px){
+    .postNoticias li div{
+        margin: 10px 20px;
+    }
+
+    .postCategorias li img{
+        width: 100%;
     }
 
     .entrenadores li img{
-        width: 300px;
+        width: 100%;
     }
 }
